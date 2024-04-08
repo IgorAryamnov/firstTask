@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ClientForm />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ClientForm from "./components/ClientForm.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ClientForm,
+  },
+};
 </script>
 
 <style>
@@ -24,5 +23,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  background: radial-gradient(
+    circle,
+    rgba(10, 32, 143, 1) 0%,
+    rgba(6, 1, 2, 1) 100%
+  );
 }
 </style>
